@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>time layers</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="Set.js"></script>
+    <script src="Script.js"></script>
+    <script src="Loop.js"></script>
+</head>
+<body onload="loop();dis();">
+    <h1 class="center">The crystal is <span id="uniage"></span> old</h1>
+    <h1 class="center">You have <span id="tp"></span></h1>
+    <div class="space"></div>
+    <table class="center">
+        <tbody>
+            <tr>
+                <td>
+                    <button class="tab" onclick="tab(1)">
+                        <p>Compressors</p>
+                    </button>
+                </td>
+                <td>
+                    <button class="tab" id="tabbutton1" onclick="tab(2)">
+                        <p>Upgrade</p>
+                    </button>
+                </td>
+                <td>
+                    <button class="tab" id="tabbutton2" onclick="tab(3)">
+                        <p>Prestage</p>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="space"></div>
+    <div id="tab1">
+        <h2 class="center">Compressors compress space time by x<span id="mag"></span>,<br>Each real time second is equivalent to <span id="magtime"></span> of matter time</h2>
+        <button type="button" onclick="buy('a', 0)" id="up1">
+            <p id="name-up1">Unlock Upgrade</p>
+            <p>cost:<span id="cost-up1">7d</span></p>
+        </button>
+        <button type="button" onclick="buy(0, 0)">
+            <p>Spacetime compressor 1</p>
+            <p>owned:<span id="amount0">0</span>[+<span id="plus0">0</span>/s] multiplier:<span id="multiplier0">1</span>x</p>
+            <p>cost:<span id="cost0"></span></p>
+        </button>
+        <button type="button" onclick="buy(0, 1)">
+            <p>Spacetime compressor 2</p>
+            <p>owned:<span id="amount1">0</span>[+<span id="plus1">0</span>/s] multiplier:<span id="multiplier1">1</span>x</p>
+            <p>cost:<span id="cost1"></span></p>
+        </button>
+        <button type="button" onclick="buy(0, 2)">
+            <p>Spacetime compressor 3</p>
+            <p>owned:<span id="amount2">0</span>[+<span id="plus2">0</span>/s] multiplier:<span id="multiplier2">1</span>x</p>
+            <p>cost:<span id="cost2"></span></p>
+        </button>
+        <button type="button" onclick="buy(0, 3)">
+            <p>Spacetime compressor 4</p>
+            <p>owned:<span id="amount3">0</span>[+<span id="plus3">0</span>/s] multiplier:<span id="multiplier3">1</span>x</p>
+            <p>cost:<span id="cost3"></span></p>
+        </button>
+        <button type="button" onclick="buy(0, 4)">
+            <p>Spacetime compressor 5</p>
+            <p>owned:<span id="amount4">0</span>[+<span id="plus4">0</span>/s] multiplier:<span id="multiplier4">1</span>x</p>
+            <p>cost:<span id="cost4"></span></p>
+        </button>
+        <button type="button" onclick="buy(0, 5)">
+            <p>Spacetime compressor 6</p>
+            <p>owned:<span id="amount5">0</span>[+<span id="plus5">0</span>/s] multiplier:<span id="multiplier5">1</span>x</p>
+            <p>cost:<span id="cost5"></span></p>
+        </button>
+        <button type="button" onclick="buy(0, 6)">
+            <p>Spacetime compressor 7</p>
+            <p>owned:<span id="amount6">0</span>[+<span id="plus6">0</span>/s] multiplier:<span id="multiplier6">1</span>x</p>
+            <p>cost:<span id="cost6"></span></p>
+        </button>
+        <button type="button" onclick="buy(0, 7)">
+            <p>Spacetime compressor 8</p>
+            <p>owned:<span id="amount7">0</span>[+<span id="plus7">0</span>/s] multiplier:<span id="multiplier7">1</span>x</p>
+            <p>cost:<span id="cost7"></span></p>
+        </button>
+    </div>
+    <div id="tab2">
+        <table class="center">
+            <tbody>
+                <tr>
+                    <td>
+                        <table class="upgrade">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div id="logo1">↑</div>
+                                    </td>
+                                    <td>
+                                        <div id="logo2">Ⅰ</div>
+                                    </td>
+                                    <td>
+                                        <div id="logo3">Ⅱ</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="logo4">Ⅲ</div>
+                                    </td>
+                                    <td>
+                                        <div id="logo5">Ⅳ</div>
+                                    </td>
+                                    <td>
+                                        <div id="logo6">Ⅴ</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div id="logo7">Ⅵ</div>
+                                    </td>
+                                    <td>
+                                        <div id="logo8">Ⅶ</div>
+                                    </td>
+                                    <td>
+                                        <div id="logo9">Ⅷ</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p id="content"></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="tab3">b</div>
+</body>
+</html>

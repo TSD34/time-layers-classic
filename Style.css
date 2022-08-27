@@ -1,0 +1,47 @@
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+h1,h2,h3,p {
+    margin: 0px;
+}
+.tab {
+    padding: 5px 30px;
+    background-color: #F0F0F0;
+}
+.tab p {
+    font-size: 24px;
+}
+button p {
+    font-size: 18px;
+}
+button {
+    padding: 5px 50px;
+    border: 2px #000000 solid;
+    border-radius: 2px;
+    margin: 8px auto;
+    display: block;
+    cursor: pointer;
+}
+.space {
+    height: 30px;
+}
+#tab1 {
+    display: block;
+}
+#tab2,#tab3,#tabbutton1,#tabbutton2 {
+    display: none;
+}
+.upgrade td div {
+    width: 80px;
+    height: 70px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    font-family: Times New Roman;
+    font-size: 50px;
+    padding-top: 10px;
+}
+.upgrade {
+    border-spacing: 10px;
+    border-collapse: separate;
+}
