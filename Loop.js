@@ -11,7 +11,7 @@ function loop() {
     for (var i = 0; i < 7; i++) {
         document.getElementById("amount" + i).textContent = unit(Math.floor(generator.amount [i]))
         document.getElementById("plus" + i).textContent = unit(generator.amount [i + 1] * generator.mag [i + 1] * game.mul)
-        generator.amount [i] += generator.amount [i + 1] * generator.mag [i + 1] * difftime * game.mul
+        generator.amount [i] += generator.amount [i + 1] * generator.mag [i + 1] * difftime * game.mul [i + 1]
     }
     document.getElementById("amount7").textContent = unit(generator.amount [7])
     beforetime = aftertime

@@ -2,7 +2,7 @@ var game = {};
 game.age = 0
 game.timemag = 1
 game.tp = 0
-game.mul = 0.1
+game.mul = [0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01, 0.01]
 var generator = {};
 generator.mag = [
     1, 1, 1, 1, 1, 1, 1, 1

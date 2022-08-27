@@ -5,7 +5,7 @@ function buy(t, u) {
                 game.tp -= generator.cost [u]
                 generator.mag [u] = Math.round(generator.mag [u] * 110) / 100
                 generator.amount [u] += 1
-                generator.cost [u] = Math.round(generator.cost [u] ** (1.3 + 0.05 * u))
+                generator.cost [u] = Math.round(generator.cost [u] ** (1.3 + 0.1 * u))
                 document.getElementById("multiplier" + u).textContent = unit(generator.mag [u])
                 document.getElementById("cost" + u).textContent = ageunit(generator.cost [u])
             }
@@ -56,7 +56,11 @@ function ageunit(t) {
                                     var uni = Math.round((hum - hum % 343) / 343)
                                     hum %= 345
                                     if (t >= ua * 1000) {
-                                        return unit(t / ua) + "u"
+                                        if (t >= ua * 7.29e19) {
+                                            var page = Math.round((uni - uni % 7.29e19) / 7.29e19)
+                                        } else {
+                                            return unit(t / ua) + "u"
+                                        }
                                     } else {
                                         return uni + "uni" + hum + "hum" + kc + "Kc"
                                     }
