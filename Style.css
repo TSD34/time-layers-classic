@@ -2,8 +2,16 @@
     text-align: center;
     margin: 0 auto;
 }
-h1,h2,h3,p {
+body {
+    background-color: #000;
+    min-width: 600px;
+}
+h1,h2,h3,p,span {
     margin: 0px;
+    color: #FFF;
+}
+button p, button span {
+    color: #000;
 }
 .tab {
     padding: 5px 30px;
@@ -42,6 +50,6 @@ button {
     padding-top: 10px;
 }
 .upgrade {
-    border-spacing: 10px;
+    border-spacing: 2px;
     border-collapse: separate;
 }

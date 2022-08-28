@@ -27,18 +27,18 @@ var up = [
     "Spacetime compressor 7 performance is multiply by 1.5",
     "Spacetime compressor 8 performance is multiply by 1.5"
 ]
-var func = []
 const ua = 86400 * 365 * 137.2e+8;
+const sa = ua * 7.29e+9;
+const pa = sa * 1e+14;
 function dis() {
     for (var i = 0; i < 8; i ++) {
         document.getElementById("cost" + i).textContent = ageunit(generator.cost [i] )
     }
     for (var i = 1; i < 10; i ++) {
-        func [i] = function () {
-            document.getElementById("content").textContent = up [i]
-        }
+        document.getElementById("img" + i).innerHTML = "<img src='img/up" + i + ".png' onclick='buy(2, " + (i - 1) + ")'>"
     }
 }
 let U_en_a = ["", "U", "D", "T", "Qa", "Qt", "Sx", "Sp", "Oc", "No"]
 let U_en_b = ["", "Dc", "Vg", "Tg", "Qd", "Qi", "Se", "St", "Og", "Nn"]
 var unlock = 0;
+var selectid = 0;
